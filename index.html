@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Tech 2025</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="popup-container">
+        <header>
+            <h1>Inscrições para o Evento Tech 2025</h1>
+        </header>
+
+        <p>Complete o formulário abaixo para se inscrever no evento.</p>
+
+        <section>
+            <h2>Informações Pessoais:</h2>
+            <form action="/submit">
+                <input type="text" name="nome" placeholder="Texto"><br>
+                <input type="email" name="email" placeholder="Email"><br>
+                <input type="password" name="senha" placeholder="Senha"><br>
+                <input type="number" name="idade" placeholder="Idade"><br>
+                <input type="date" name="data"><br>
+            </form>
+    
+            <h2>Preferências do Evento:</h2>
+            <form action="/submit">
+                <input list="opcoes" id="escolha" name="escolha" placeholder="Selecione um tema de interesse">
+                <datalist id="opcoes">
+                    <option value="Front-End">
+                    <option value="Back-End">
+                    <option value="Full stack">
+                    <option value="Ciência de Dados">
+                </datalist>
+            </form>
+            <div class="checkbox-container">
+                <label><input type="checkbox" name="checkbox1"> Segurança</label>
+                <label><input type="checkbox" name="checkbox2"> Segurança</label>
+                <label><input type="checkbox" name="checkbox3"> Segurança</label>
+            </div>
+    
+            <h2>Submissão de Apresentação:</h2>
+            <form action="/submit">
+                <input type="text" name="title" placeholder="Título da Apresentação"><br>
+                <textarea name="Resumo" placeholder="Resumo da Apresentação"></textarea>
+                <input type="file" id="arquivo" name="arquivo" accept=".pdf" required>
+                <input type="submit" value="Enviar">
+            </form>
+            
+        </section>
+        <footer>&copy; 2025 Evento Tech. Todos os direitos reservados.</footer>
+    </div>
+</body>
+
+</html>
